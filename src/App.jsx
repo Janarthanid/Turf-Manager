@@ -34,7 +34,7 @@ const App = () => {
     const fetchBookings = async () => {
       try {
         const token = localStorage.getItem('authToken');
-        const response = await axios.get('http://localhost:3000/bookings', {
+        const response = await axios.get('https://turf-backend-1.onrender.com/bookings', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
