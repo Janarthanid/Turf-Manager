@@ -21,7 +21,7 @@ const BookingForm = ({ turf, onBook }) => {
         const token = localStorage.getItem('authToken');
 
         
-        const response = await axios.post('http://localhost:3000/bookings', bookingData, {
+        const response = await axios.post('https://turf-backend-1.onrender.com/bookings', bookingData, {
           headers: {
             Authorization: `Bearer ${token}`, 
           },
